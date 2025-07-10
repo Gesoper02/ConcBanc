@@ -13,16 +13,57 @@
     </header>
     <main>
         <section id="intro">
-            <h2>O que é a Conciliação Bancária?</h2>
-            <p>Toda vez que uma conta banco é movimentada através do fluxo de caixa, ela mantém um registro dentro do módulo administrativo para posterior validação junto ao arquivo de extrato (OFX) gerado a partir do banco, esse processo de validação de lançamentos chamamos de conciliação bancária.
-               Para acessar o programa de conciliação bancária, abra o menu “Tesouraria” e em seguida “Conciliação bancária”. 
-               Inicialmente, para realizarmos a conciliação bancária, dependemos de um arquivo de conciliação bancária, este arquivo deve ser obtido através do site do banco, normalmente, o processo financeiro de conciliação bancária sempre é realizado sob o dia anterior ou sob a semana anterior.
-	           O primeiro passo é definir a data, nos campos Data inicial e Data final em que iremos realizar a conciliação, obter junto ao banco o arquivo OFX dentro do período onde iremos realizar a conciliação bancária, clicar no botão“ImportarOFX”e depois clicar no botão“Pesquisar”.
-	           Noladoesquerdo, Extrato Bancário é exibido as informações das operações que foram importadas via arquivo OFX e nolado direito, Gesoper ADM os lançamentos realizados no fluxo de caixa para a conta selecionada para poder conciliar.
-	           No lado esquerdo ainda, é possível selecionar todos ou alguns registros e se for preciso, excluir estes lançamentos, através do botão“Excluir Lançamento”para poder por exemplo, importar novamente o arquivo ofx.
-	           Existe também a possibilidade, de lançar um estorno através do botão “Estornar Selecionados”e desfazer este lançamento, botão “Desfazer Estorno”estas duas opções são usadas em casos específicos, onde o banco lança algum registro indevido e não faz automaticamente o lançamento deste estorno no extrato bancário.
-.</p>
-        </section>
+            <section id="intro">
+    <section id="intro">
+    <h2>O que é a Conciliação Bancária?</h2>
+    <p>
+        Toda vez que uma conta banco é movimentada através do fluxo de caixa, ela mantém um registro dentro do módulo administrativo para posterior validação junto ao arquivo de extrato (OFX) gerado a partir do banco. Esse processo de validação de lançamentos chamamos de conciliação bancária.
+    </p>
+    <p>
+        Para acessar o programa de conciliação bancária, abra o menu “Tesouraria” e em seguida “Conciliação bancária”.
+        Inicialmente, para realizarmos a conciliação bancária, dependemos de um arquivo de conciliação bancária, este arquivo deve ser obtido através do site do banco. Normalmente, o processo financeiro de conciliação bancária sempre é realizado sob o dia anterior ou sob a semana anterior.
+    </p>
+    <p>
+        O primeiro passo é definir a data, nos campos <strong>Data inicial</strong> e <strong>Data final</strong> em que iremos realizar a conciliação, obter junto ao banco o arquivo OFX dentro do período onde iremos realizar a conciliação bancária, clicar no botão <strong>“Importar OFX”</strong> e depois clicar no botão <strong>“Pesquisar”</strong>.
+    </p>
+    <p>
+        No lado esquerdo, <strong>Extrato Bancário</strong> é exibido as informações das operações que foram importadas via arquivo OFX e no lado direito, <strong>Gesoper ADM</strong> os lançamentos realizados no fluxo de caixa para a conta selecionada para poder conciliar.
+    </p>
+  <h2>Filtros e Funcionalidades da Tela</h2>
+  <p>
+    Existem na tela alguns campos de filtro que podem ser utilizados:
+    <strong>“Ocultar Conciliados”</strong>, caso marcado, oculta os registros já conciliados para agilizar o processo.
+  </p>
+  <p>
+    O campo <strong>“Tipo”</strong> permite filtrar operações do tipo <strong>“Débito”</strong>, <strong>“Crédito”</strong> ou <strong>“Todos”</strong>. Conforme a opção escolhida, os registros serão exibidos em ambos os lados:
+    <strong>“Extrato Bancário”</strong> e <strong>“Gesoper ADM”</strong>.
+  </p>
+  <p>
+    O campo <strong>“Valor”</strong> permite filtrar um valor específico para facilitar a localização de lançamentos.
+  </p>
+  <p>
+    No lado direito, <strong>Gesoper ADM</strong>, é possível executar ações que afetam diretamente o processo de conciliação:
+    o botão <strong>“Marcar Iguais”</strong> serve para identificar registros com informações idênticas (valor e data) nos dois lados da tela.
+  </p>
+  <p>
+    Após marcar os registros, utilize <strong>“Conciliar Selecionados”</strong> para efetivar a conciliação.
+  </p>
+  <p>
+    O botão <strong>“Ajustar Conciliação”</strong> permite corrigir pequenas diferenças de centavos. Exemplo: se um valor lançado for R$11.500,49 e o banco registrar R$11.500,48.
+  </p>
+  <p>
+    Os botões <strong>“Marcar Conciliados”</strong> e <strong>“Desmarcar Conciliados”</strong> facilitam a visualização dos lançamentos já conciliados.
+  </p>
+  <p>
+    O botão <strong>“Detalhar”</strong> mostra os detalhes do lançamento do Caixa selecionado.
+  </p>
+  <p>
+    O botão <strong>“Gerar Lançamento”</strong> é usado para criar lançamentos que estão no extrato bancário mas não constam no sistema, como tarifas bancárias, juros, mensalidades e resgates.
+  </p>
+  <p>
+    Para gerar um relatório de conferência, use o botão <strong>“Listar”</strong>. Ele permite visualizar os registros conforme o filtro: <em>Tudo</em>, <em>Não Conciliados</em> ou <em>Conciliados</em>.
+  </p>
+</section>
         <section id="procedimentos">
             <h2>Procedimentos</h2>
             <ol>
