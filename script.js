@@ -4,20 +4,13 @@ function searchContent() {
     const allElements = content.querySelectorAll("p, li, h2, h3");
 
     allElements.forEach(el => {
-        // Limpa realces anteriores
+        // Remove marcas anteriores
         el.innerHTML = el.textContent;
 
-        const text = el.textContent.toLowerCase();
-        if (input === "") {
-            el.style.display = "";
-        } else if (text.includes(input)) {
-            el.style.display = "";
-
-            // Aplica realce no texto encontrado
+        if (input !== "" && el.textContent.toLowerCase().includes(input)) {
+            // Aplica destaque ao texto correspondente
             const regex = new RegExp(`(${input})`, "gi");
             el.innerHTML = el.textContent.replace(regex, `<mark>$1</mark>`);
-        } else {
-            el.style.display = "none";
         }
     });
 }
