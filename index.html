@@ -67,5 +67,20 @@
         <p>&copy; 2025 - Gesoper Conciliação Bancária</p>
     </footer>
     <script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.querySelector('input[type="search"], input[type="text"]');
+    const contentSections = document.querySelectorAll("body > *:not(header):not(script):not(style)");
+
+    searchInput.addEventListener("input", function () {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      contentSections.forEach(section => {
+        const text = section.textContent.toLowerCase();
+        section.style.display = text.includes(searchTerm) ? "" : "none";
+      });
+    });
+  });
+</script>
 </body>
 </html>
